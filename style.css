@@ -1,0 +1,12 @@
+img{
+    width: 600px;
+}
+h1{
+    color: lightseagreen;
+}
+.calculate-btn{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 8px;
+}
