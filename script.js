@@ -11,7 +11,7 @@ function percentageCalculate(amount,percent){
 document.getElementById('calculate-button').addEventListener('click', function(){
     // income input field
     const incomeInput = document.getElementById('income-input');
-    const income = parseFloat(incomeInput.value);
+    const incomeTotal = parseFloat(incomeInput.value);
     // Food input field
     const foodInput = document.getElementById('food-input');
     const foodCost = parseFloat(foodInput.value);
@@ -27,7 +27,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
     
     // Balance Total
     const balanceTotal = document.getElementById('balance-total');
-    balanceTotal.innerText = income - expenseTotal.innerText;
+    balanceTotal.innerText = incomeTotal - expenseTotal.innerText;
       
 })
     // save button action field
