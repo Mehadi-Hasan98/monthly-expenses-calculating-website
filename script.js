@@ -18,7 +18,8 @@ document.getElementById('calculate-button').addEventListener('click', function()
     balanceTotal.innerText = income - expenseTotal.innerText;
       
 })
-
+// if (income != number || inputValue <0);
+// alert();
 document.getElementById('saving-button').addEventListener('click', function(){
     const savingInput = document.getElementById('saving-input');
     const totalSaving = savingInput.value;
