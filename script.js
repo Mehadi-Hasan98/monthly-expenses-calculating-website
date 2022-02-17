@@ -1,13 +1,4 @@
-function subAmount(num1,num2){
-    let sub  = num1 - num2;
-    return sub;
-}
-function percentageCalculate(amount,percent){
-   var percentageAmount = amount *(percent/100);
-   return percentageAmount;   
-}
-
-
+// calculate button field
 document.getElementById('calculate-button').addEventListener('click', function(){
     // income input field
     const incomeInput = document.getElementById('income-input');
@@ -27,9 +18,9 @@ document.getElementById('calculate-button').addEventListener('click', function()
     
     // Balance Total
     const balanceTotal = document.getElementById('balance-total');
-    balanceTotal.innerText = incomeTotal - expenseTotal.innerText;
-      
+    balanceTotal.innerText = incomeTotal - expenseTotal.innerText;    
 })
+
     // save button action field
 document.getElementById('saving-button').addEventListener('click', function(){
     // save field input
@@ -40,7 +31,7 @@ document.getElementById('saving-button').addEventListener('click', function(){
     const income = incomeInput.value;
     const savingValue = document.getElementById('saving-value');
     // percentage calculation
-    const savingAmount = income * (totalSaving / 100)
+    const savingAmount = income * (totalSaving / 100);
     const remainingBalance = document.getElementById('remaining-balance');
     savingValue.innerText = savingAmount;
     // Remaining Balance calculation
